@@ -1,0 +1,655 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Finlandica', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1220px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+
+.header__link:hover {
+  color: rgb(200, 0, 0);
+}
+
+.header__logo {
+  font-size: 40px;
+  font-weight: 400;
+  color: rgb(232, 6, 6)
+}
+
+.header__logo:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+.header {
+  position: relative;
+  padding: 15px 0;
+  background: rgb(0, 0, 0);
+  border: black
+
+}
+
+.header__link {
+  color: white;
+  font-size: 18px;
+  margin-left: 71px;
+  font-family: 'Finlandica', sans-serif;
+}
+
+
+
+/* fighters */
+
+
+
+.fighter__img {
+  width: 100%;
+
+  /* background-image: url(https://www.aca-mma.com/img/fighters-page/arrow.png);
+background-repeat: no-repeat; */
+}
+
+.fighter__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fighter__info {
+  font-size: 18px;
+  color: #000000;
+}
+
+.fighter__name {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 13px 0;
+}
+
+.fighter__mass {
+  padding-bottom: 8px;
+}
+
+.fighters__card {
+  padding: 15px;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(99,0,0,0.7708333333333334) 0%, rgba(255,255,255,1) 38%, rgba(220,220,220,1) 63%, rgba(198,198,198,0.9921218487394958) 82%);border-radius: 10px;
+box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.33) ;
+
+}
+
+.fighters__card:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+
+
+.fighters_wrapper {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 30px;
+
+
+}
+
+
+.fighters {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+.fighters__title {
+  text-align: center;
+  font-family: 'Finlandica', sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 40px 0 50px 0;
+}
+
+
+
+/* Couches */
+
+.couch{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.couch__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.couch_img2{
+  border-radius: 10%;
+  box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.33) ;
+
+}
+
+.couch__info {
+  font-size: 16px;
+  font-family: 'Finlandica', sans-serif;
+  text-align: center;
+margin-bottom: 50px;
+margin-top: 30px;
+}
+
+.couch__name {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 13px 0;
+}
+
+.couches__wrapper {
+  /* padding-top: 35px;
+  margin: 35px 0 200px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 100px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  align-items: center;
+  padding: 50px;
+}
+
+.couch__card{
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.couch__card:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+.couch_title{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.couches {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+.couches_title {
+  text-align: center;
+  font-family: 'Finlandica', sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 20px 0;
+}
+
+
+
+/* news */
+
+.news{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.news_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 80px;
+}
+
+.news_card {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.news_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news_img{
+  width: 100%;
+  height: 100%;
+  margin-right: 70px;
+}
+
+.news_title{
+  font-size: 25px;
+  font-weight: 800;
+  font-family: 'Finlandica', sans-serif;
+  color: #b90000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.news_descr{
+  font-size: 18px;
+  font-family: 'Finlandica', sans-serif;
+  margin-top: 10px;
+}
+
+
+
+.news_info{
+  width: 900px;
+  background-color: #e4dfdf;
+  padding: 30px;
+  box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.33) ;
+}
+
+.news_btn{
+  margin-top: 25px;
+  padding: 10px 15px;
+  border: rgb(128, 128, 128) 2px solid;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  font-family: 'Finlandica', sans-serif;
+  transition: 0.3s;
+}
+
+.news_btn:hover{
+  background-color: #b7afaf;
+  box-shadow: 0px 0px 5px 4px rgba(115, 114, 114, 0.33) ;
+
+}
+
+
+/* footer */
+
+.pt {
+  padding-top: 38px;
+}
+
+.footer {
+  background: #000000;
+  margin-top: 80px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0 30px;
+}
+
+.footer__descr {
+  max-width: 250px;
+  margin-top: 16px;
+  font-size: 11px;
+  letter-spacing: 0.85px;
+  color: #FFFFFF;
+}
+
+
+.footer__subtitle {
+  margin-bottom: 30px;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: 'Finlandica', sans-serif;
+  letter-spacing: 0.846154px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__link {
+  font-size: 11px;
+  line-height: 25px;
+  font-family: 'Finlandica', sans-serif;
+  letter-spacing: 0.846154px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer__link:hover{
+  color: #c90000;
+}
+
+.footer__info {
+  max-width: 200px;
+}
+
+.footer__info-item {
+  font-size: 11px;
+  line-height: 16px;
+  font-family: 'Finlandica', sans-serif;
+  letter-spacing: 0.846154px;
+  color: #FFFFFF;
+}
+
+.footer__info li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__socials {
+  display: flex;
+  max-width: 280px;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer__socials li:hover {
+  color: #9e0303;
+}
+
+.sns_icon{
+  color: #ffffff;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+.icon{
+margin-right: 10px;
+}
+
+
+
+
+
+
+/* Турниры - дата */
+.events__news{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Finlandica', sans-serif;
+}
+ 
+.events__wrapper{
+  display: grid;
+  grid-template-columns:0.5fr 1fr 1fr;
+  border: solid 1px black;
+  margin-top: 75px;
+  background-color: #f2f2d4;
+
+}
+.events__info{
+  padding: 50px;
+}
+.events__date{
+  font-size: 36px;
+  font-family: 'Finlandica', sans-serif;
+  text-align: center;
+  padding-top: 140px;
+  color: #c91111;
+}
+
+/* описание турнира*/
+
+.events__image{
+  width: 100%;
+  padding: 20px;
+  
+}
+.events__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* федерация */
+
+
+
+.federation__title{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.federation__text{
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.federation__text-values{
+  font-size: 17px;
+
+}
+
+.federation__subtitle{
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 20px;
+margin-top: 15px;
+color: #c90000;
+}
+
+.federation__values{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+}
+.federation__card{
+  padding-bottom: 20px;
+}
+.federation__card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.federation__information{
+  padding-top: 20px;
+  font-family: 'Finlandica', sans-serif
+}
+.object__cover{
+  object-fit: cover;
+}
+
+.federation__img{
+  border-radius: 20px;
+}
+
+
+/* Player */
+
+.federation__reactPlayer{
+  display: grid;
+  justify-content: center;
+  margin-top: 30px
+}
+
+
+
+
+/* карусель */
+
+.home__values{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+}
+
+.home__card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  
+.home__info{
+  font-family: 'Finlandica', sans-serif;
+  padding-top: 50px;
+}
+
+.home__subtitle{
+  font-family: 'Finlandica', sans-serif;
+  font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #c90000;
+}
+
+.home__text{
+  font-size: 17px;
+}
+
+.home__img{
+  border-radius: 10px;
+  margin-top: 35px;
+}
+
+/* donate */
+
+
+.donate_bg{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+
+/* ////////////////////////CardStore /////////////////////////////////////////// */
+
+
+
+.card__store__wrapper{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8vh;
+  padding-top: 50px;
+  
+}
+
+.card__store{
+  font-family: 'Finlandica', sans-serif;
+  padding: 15px;
+  background: #f0f2f5;
+}
+
+.card__store__img{
+  width: 100%;
+}
+
+.card__store__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card__store__btn{
+  cursor: pointer;
+  width: 100%;
+  background: #dc0f0f;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Finlandica', sans-serif;
+  border: none;
+  padding: 10px;
+  transition-property:scale;
+  transition: 0.8s;
+
+}
+
+.card__store__btn:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+.card__store__btn__title{
+  padding: 8px;
+}
+
+.donate_title{
+  font-size: 30px;
+  color: #9e0303;
+  font-weight: 600;
+}
+
+.donate_num{
+  font-size: 20px;
+  color: #000000;
+}
+
+.donate_card{
+text-align: center;
+padding: 80px 0 242px 0;
+}
+
+
+.home__spinner{
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 300px);
+  align-items: center;
+}
+
+
+.btn_x{
+  background-color: #9e0303;
+}
+
+/* Modal */
+
+.donate_bg{
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100vh;
+background-color: rgba(0, 0, 0, 0.4);
+z-index: 10;
+top: 100px;
+}
+
+.store_bg{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5887605042016807) 65%, rgba(0, 0, 0, 1) 100%);
+
+}
+
